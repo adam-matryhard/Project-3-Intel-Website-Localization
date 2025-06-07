@@ -1,0 +1,137 @@
+/* Add your CSS here */
+
+/* Intel-branded blue background for header */
+header.bg-primary {
+  /* Intel blue color */
+  background-color: #0071c5 !important;
+}
+
+/* Make sure logo is centered and sized */
+header img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 150px;
+  width: 100%;
+}
+
+/* Headline: white for strong contrast */
+header h1 {
+  color: #fff;
+}
+
+/* Subheading: lighter white for softer contrast */
+header p.lead {
+  color: #e0e0e0;
+}
+
+/* Timeline container: adds padding for the timeline section */
+.timeline-container {
+  padding: 0 10px;
+}
+
+/* Flexbox for timeline cards */
+.timeline-cards {
+  display: flex; /* Use flexbox to arrange cards */
+  flex-direction: row; /* Arrange cards in a row (horizontal) */
+  gap: 1rem; /* Space between cards */
+  overflow-x: auto; /* Enable horizontal scrolling */
+  padding-bottom: 1rem; /* Space below cards for scrollbar */
+  scroll-snap-type: x mandatory; /* Enable horizontal scroll snap */
+}
+
+/* Each card has a fixed width for horizontal scrolling */
+.timeline-card {
+  min-width: 300px; /* Minimum width for each card */
+  max-width: 320px; /* Maximum width for each card */
+  flex: 0 0 auto;   /* Prevent cards from shrinking */
+  background-color: #f8f9fa; /* Light background */
+  border: 2px solid #0071c5; /* Intel blue border */
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 8px rgba(0, 113, 197, 0.08); /* Soft blue shadow */
+  transition: transform 0.2s, box-shadow 0.2s;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 0.5rem;
+  scroll-snap-align: start; /* Snap each card to the start of the container */
+}
+
+/* Make all timeline images the same size and fit nicely */
+.timeline-card .card-img-top {
+  /* Set a fixed height for all images */
+  height: 180px;
+  /* Make sure the image covers the area without stretching */
+  object-fit: cover;
+  /* Make image corners match card corners */
+  border-top-left-radius: 0.375rem;
+  border-top-right-radius: 0.375rem;
+  /* Make image take full width of the card */
+  width: 100%;
+}
+
+/* Card heading styles */
+.timeline-card .card-title {
+  color: #0071c5; /* Intel blue */
+  font-weight: bold;
+  margin-bottom: 0.25rem;
+}
+
+.timeline-card .h6 {
+  color: #333;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+/* Card text styles */
+.timeline-card .card-text {
+  color: #222;
+  font-size: 1rem;
+  margin-bottom: 0;
+}
+
+/* Add spacing inside the card */
+.timeline-card .card-body {
+  padding: 1rem;
+}
+
+/* Reveal extra details on hover */
+.timeline-card .extra-details {
+  display: none; /* Hidden by default */
+  color: #0071c5;
+  background: #e6f2fa;
+  border-top: 1px solid #b3d7f2;
+  margin-top: 0.75rem;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  font-size: 0.95rem;
+}
+
+/* Show extra details when hovering over the card */
+.timeline-card:hover {
+  transform: translateY(-6px) scale(1.03);
+  box-shadow: 0 6px 24px rgba(0, 113, 197, 0.18);
+  z-index: 2;
+}
+
+.timeline-card:hover .extra-details {
+  display: block;
+}
+
+/* On small screens, stack cards vertically */
+@media (max-width: 767px) {
+  .timeline-cards {
+    flex-direction: column; /* Stack cards vertically */
+    overflow-x: visible;    /* No horizontal scroll needed */
+    gap: 1.5rem;
+  }
+  .timeline-card {
+    min-width: 0;
+    max-width: 100%;
+    width: 100%;
+  }
+}
+
+/* Use a clean, modern font for the whole page */
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
