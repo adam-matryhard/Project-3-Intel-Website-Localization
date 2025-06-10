@@ -30,6 +30,15 @@ header p.lead {
   padding: 0 10px;
 }
 
+/* This wrapper centers the timeline on the page,
+   sets a max width for 4 cards, and allows horizontal scrolling. */
+.timeline-scroll-wrapper {
+  max-width: 1100px; /* Adjust based on your card width */
+  margin: 0 auto;    /* Center the wrapper */
+  overflow-x: auto;  /* Enable horizontal scroll if needed */
+  padding: 20px 0;   /* Add some space above and below */
+}
+
 /* Flexbox for timeline cards */
 .timeline-cards {
   display: flex; /* Use flexbox to arrange cards */
@@ -38,6 +47,14 @@ header p.lead {
   overflow-x: auto; /* Enable horizontal scrolling */
   padding-bottom: 1rem; /* Space below cards for scrollbar */
   scroll-snap-type: x mandatory; /* Enable horizontal scroll snap */
+}
+
+/* Show the cards in a row (side by side).
+   Beginners: This uses flexbox for a simple horizontal layout. */
+.timeline-cards {
+  display: flex;
+  flex-direction: row;
+  gap: 20px; /* Space between cards */
 }
 
 /* Each card has a fixed width for horizontal scrolling */
@@ -54,6 +71,14 @@ header p.lead {
   overflow: hidden;
   margin-bottom: 0.5rem;
   scroll-snap-align: start; /* Snap each card to the start of the container */
+}
+
+/* Make sure each card has a fixed width so only 4 fit in the wrapper.
+   Adjust the width if your cards are bigger or smaller. */
+.timeline-card {
+  min-width: 250px;
+  max-width: 250px;
+  flex: 0 0 250px; /* Prevent cards from shrinking or growing */
 }
 
 /* Make all timeline images the same size and fit nicely */

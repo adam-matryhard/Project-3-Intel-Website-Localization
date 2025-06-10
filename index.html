@@ -34,157 +34,370 @@
     On small screens, cards stack vertically.
   -->
   <section class="timeline-container mb-4">
-    <div class="timeline-cards">
-      <!-- Card 1: 1968 -->
-      <div class="card timeline-card">
-        <img src="img/1.jpg" class="card-img-top" alt="Placeholder Image" />
-        <div class="card-body">
-          <h2 class="card-title h5">1968</h2>
-          <h3 class="h6">Intel Founded</h3>
-          <p class="card-text">
-            Robert Noyce and Gordon Moore rename the newly formed company 
-            NM Electronics to Intel Corporation, laying the foundation for 
-            decades of technological innovation.
-          </p>
-          <!-- Extra details shown on hover -->
-          <div class="extra-details">
-            Did you know? The name "Intel" comes from "Integrated Electronics."
+    <!-- 
+      The new wrapper centers the timeline and controls its width.
+      It also allows horizontal scrolling if there are more than 4 cards.
+    -->
+    <div class="timeline-scroll-wrapper">
+      <div class="timeline-cards">
+        <!-- Card 1: 1968 -->
+        <div class="card timeline-card">
+          <img src="img/1.jpg" class="card-img-top" alt="Placeholder Image" />
+          <div class="card-body">
+            <h2 class="card-title h5">1968</h2>
+            <h3 class="h6">Intel Founded</h3>
+            <p class="card-text">
+              Robert Noyce and Gordon Moore rename the newly formed company 
+              NM Electronics to Intel Corporation, laying the foundation for 
+              decades of technological innovation.
+            </p>
+            <!-- Extra details shown on hover -->
+            <div class="extra-details">
+              Did you know? The name "Intel" comes from "Integrated Electronics."
+            </div>
           </div>
         </div>
-      </div>
-      <!-- Card 2: 1971 -->
-      <div class="card timeline-card">
-        <img src="img/2.jpg" class="card-img-top" alt="Placeholder Image" />
-        <div class="card-body">
-          <h2 class="card-title h5">1971</h2>
-          <h3 class="h6">First Microprocessor</h3>
-          <p class="card-text">
-            Intel debuts the 4004, the world's first commercial microprocessor, 
-            igniting the microprocessor revolution and propelling the future 
-            of computing devices.
-          </p>
-          <div class="extra-details">
-            The 4004 chip had just 2,300 transistors—modern chips have billions!
+        <!-- Card 2: 1971 -->
+        <div class="card timeline-card">
+          <img src="img/2.jpg" class="card-img-top" alt="Placeholder Image" />
+          <div class="card-body">
+            <h2 class="card-title h5">1971</h2>
+            <h3 class="h6">First Microprocessor</h3>
+            <p class="card-text">
+              Intel debuts the 4004, the world's first commercial microprocessor, 
+              igniting the microprocessor revolution and propelling the future 
+              of computing devices.
+            </p>
+            <div class="extra-details">
+              The 4004 chip had just 2,300 transistors—modern chips have billions!
+            </div>
           </div>
         </div>
-      </div>
-      <!-- Card 3: 1978 -->
-      <div class="card timeline-card">
-        <img src="img/3.jpg" class="card-img-top" alt="Placeholder Image" />
-        <div class="card-body">
-          <h2 class="card-title h5">1978</h2>
-          <h3 class="h6">8086 Processor</h3>
-          <p class="card-text">
-            Launch of the 8086 processor, establishing the x86 architecture 
-            that drives countless PCs and servers in the modern era.
-          </p>
-          <div class="extra-details">
-            The x86 architecture is still used in most PCs today.
+        <!-- Card 3: 1978 -->
+        <div class="card timeline-card">
+          <img src="img/3.jpg" class="card-img-top" alt="Placeholder Image" />
+          <div class="card-body">
+            <h2 class="card-title h5">1978</h2>
+            <h3 class="h6">8086 Processor</h3>
+            <p class="card-text">
+              Launch of the 8086 processor, establishing the x86 architecture 
+              that drives countless PCs and servers in the modern era.
+            </p>
+            <div class="extra-details">
+              The x86 architecture is still used in most PCs today.
+            </div>
           </div>
         </div>
-      </div>
-      <!-- Card 4: 1985 -->
-      <div class="card timeline-card">
-        <img src="img/4.jpg" class="card-img-top" alt="Placeholder Image" />
-        <div class="card-body">
-          <h2 class="card-title h5">1985</h2>
-          <h3 class="h6">386 Processor</h3>
-          <p class="card-text">
-            Intel introduces the 386 processor with 32-bit architecture, 
-            ushering in a new era of performance and multitasking for 
-            personal computers.
-          </p>
-          <div class="extra-details">
-            The 386 could run multiple programs at once—a big step for PCs!
+        <!-- Card 4: 1985 -->
+        <div class="card timeline-card">
+          <img src="img/4.jpg" class="card-img-top" alt="Placeholder Image" />
+          <div class="card-body">
+            <h2 class="card-title h5">1985</h2>
+            <h3 class="h6">386 Processor</h3>
+            <p class="card-text">
+              Intel introduces the 386 processor with 32-bit architecture, 
+              ushering in a new era of performance and multitasking for 
+              personal computers.
+            </p>
+            <div class="extra-details">
+              The 386 could run multiple programs at once—a big step for PCs!
+            </div>
           </div>
         </div>
-      </div>
-      <!-- Card 5: 2006 -->
-      <div class="card timeline-card">
-        <!-- Use the correct path to the image -->
-        <img src="img/peak-emissions.png" class="card-img-top" alt="Semiconductor factory with smoke stacks for Peak GHG Emissions" />
-        <div class="card-body">
-          <h2 class="card-title h5">2006</h2>
-          <h3 class="h6">Peak GHG Emissions</h3>
-          <p class="card-text">
-            This year marks Intel's highest annual greenhouse gas emissions 
-            for operations. Over subsequent years, Intel invests heavily in 
-            chemical abatement, renewable energy, and energy-efficient 
-            manufacturing to reverse this trend.
-          </p>
-          <div class="extra-details">
-            Intel reduced emissions by investing in renewable energy and new technology.
+        <!-- Card 5: 2006 -->
+        <div class="card timeline-card">
+          <!-- Use the correct path to the image -->
+          <img src="img/peak-emissions.png" class="card-img-top" alt="Semiconductor factory with smoke stacks for Peak GHG Emissions" />
+          <div class="card-body">
+            <h2 class="card-title h5">2006</h2>
+            <h3 class="h6">Peak GHG Emissions</h3>
+            <p class="card-text">
+              This year marks Intel's highest annual greenhouse gas emissions 
+              for operations. Over subsequent years, Intel invests heavily in 
+              chemical abatement, renewable energy, and energy-efficient 
+              manufacturing to reverse this trend.
+            </p>
+            <div class="extra-details">
+              Intel reduced emissions by investing in renewable energy and new technology.
+            </div>
           </div>
         </div>
-      </div>
-      <!-- Card 6: 2020 -->
-      <div class="card timeline-card">
-        <img src="img/6.png" class="card-img-top" alt="Placeholder Image" />
-        <div class="card-body">
-          <h2 class="card-title h5">2020</h2>
-          <h3 class="h6">RISE Strategy</h3>
-          <p class="card-text">
-            Intel launches its RISE (Responsible, Inclusive, Sustainable, 
-            Enabling) strategy and 2030 goals, aiming to drive industry-wide 
-            progress on climate action, water stewardship, and waste reduction.
-          </p>
-          <div class="extra-details">
-            RISE stands for Responsible, Inclusive, Sustainable, Enabling.
+        <!-- Card 6: 2020 -->
+        <div class="card timeline-card">
+          <img src="img/6.png" class="card-img-top" alt="Placeholder Image" />
+          <div class="card-body">
+            <h2 class="card-title h5">2020</h2>
+            <h3 class="h6">RISE Strategy</h3>
+            <p class="card-text">
+              Intel launches its RISE (Responsible, Inclusive, Sustainable, 
+              Enabling) strategy and 2030 goals, aiming to drive industry-wide 
+              progress on climate action, water stewardship, and waste reduction.
+            </p>
+            <div class="extra-details">
+              RISE stands for Responsible, Inclusive, Sustainable, Enabling.
+            </div>
           </div>
         </div>
-      </div>
-      <!-- Card 7: 2022 -->
-      <div class="card timeline-card">
-        <img src="img/7.png" class="card-img-top" alt="Placeholder Image" />
-        <div class="card-body">
-          <h2 class="card-title h5">2022</h2>
-          <h3 class="h6">Net-Zero By 2040</h3>
-          <p class="card-text">
-            Intel announces its commitment to achieve net-zero greenhouse 
-            gas emissions (Scope 1 and 2) across its global operations 
-            by 2040, building on years of environmental initiatives.
-          </p>
-          <div class="extra-details">
-            Net-zero means balancing the amount of emitted and removed greenhouse gases.
+        <!-- Card 7: 2022 -->
+        <div class="card timeline-card">
+          <img src="img/7.png" class="card-img-top" alt="Placeholder Image" />
+          <div class="card-body">
+            <h2 class="card-title h5">2022</h2>
+            <h3 class="h6">Net-Zero By 2040</h3>
+            <p class="card-text">
+              Intel announces its commitment to achieve net-zero greenhouse 
+              gas emissions (Scope 1 and 2) across its global operations 
+              by 2040, building on years of environmental initiatives.
+            </p>
+            <div class="extra-details">
+              Net-zero means balancing the amount of emitted and removed greenhouse gases.
+            </div>
           </div>
         </div>
-      </div>
-      <!-- Card 8: 2023 -->
-      <div class="card timeline-card">
-        <img src="img/8.png" class="card-img-top" alt="Placeholder Image" />
-        <div class="card-body">
-          <h2 class="card-title h5">2023</h2>
-          <h3 class="h6">Renewable Electricity</h3>
-          <p class="card-text">
-            The company achieves 99% renewable electricity usage worldwide, 
-            helping to drastically lower carbon emissions and driving progress 
-            toward Intel's long-term sustainability goals.
-          </p>
-          <div class="extra-details">
-            Renewable electricity comes from sources like wind and solar power.
+        <!-- Card 8: 2023 -->
+        <div class="card timeline-card">
+          <img src="img/8.png" class="card-img-top" alt="Placeholder Image" />
+          <div class="card-body">
+            <h2 class="card-title h5">2023</h2>
+            <h3 class="h6">Renewable Electricity</h3>
+            <p class="card-text">
+              The company achieves 99% renewable electricity usage worldwide, 
+              helping to drastically lower carbon emissions and driving progress 
+              toward Intel's long-term sustainability goals.
+            </p>
+            <div class="extra-details">
+              Renewable electricity comes from sources like wind and solar power.
+            </div>
           </div>
         </div>
-      </div>
-      <!-- Card 9: 2024 -->
-      <div class="card timeline-card">
-        <img src="img/9.png" class="card-img-top" alt="Placeholder Image" />
-        <div class="card-body">
-          <h2 class="card-title h5">2024</h2>
-          <h3 class="h6">Sustainability Summit</h3>
-          <p class="card-text">
-            Intel hosts its first Sustainability Summit, uniting suppliers, 
-            government officials, and industry leaders to collaborate on 
-            next-generation sustainable semiconductor manufacturing.
-          </p>
-          <div class="extra-details">
-            The summit helps share ideas for a greener future in technology.
+        <!-- Card 9: 2024 -->
+        <div class="card timeline-card">
+          <img src="img/9.png" class="card-img-top" alt="Placeholder Image" />
+          <div class="card-body">
+            <h2 class="card-title h5">2024</h2>
+            <h3 class="h6">Sustainability Summit</h3>
+            <p class="card-text">
+              Intel hosts its first Sustainability Summit, uniting suppliers, 
+              government officials, and industry leaders to collaborate on 
+              next-generation sustainable semiconductor manufacturing.
+            </p>
+            <div class="extra-details">
+              The summit helps share ideas for a greener future in technology.
+            </div>
           </div>
         </div>
       </div>
     </div>
   </section>
   <p class="text-center mb-4">Scroll to view timeline | Hover over cards to learn more!</p>
+
+  <!-- Newsletter and Modal Row (side by side) -->
+  <div class="container my-4">
+    <div class="row">
+      <!-- Left side: Newsletter Signup Form -->
+      <div class="col-md-6 mb-3">
+        <!-- Bootstrap card for a simple look -->
+        <div class="card shadow-sm">
+          <div class="card-body">
+            <!-- Form heading -->
+            <h2 class="h4 mb-3 text-center">Sign Up for Intel's Sustainability Newsletter</h2>
+            <!-- The form starts here -->
+            <form>
+              <!-- Email input field -->
+              <div class="mb-3">
+                <label for="newsletter-email" class="form-label">Email address:</label>
+                <input type="email" class="form-control" id="newsletter-email" placeholder="Enter your email" required>
+              </div>
+              <!-- Submit button -->
+              <div class="d-grid">
+                <button type="submit" class="btn btn-primary">Subscribe</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <!-- Right side: Modal Button (centered vertically and horizontally) -->
+      <div class="col-md-6 d-flex align-items-center justify-content-center mb-3">
+        <!-- Button to open the modal -->
+        <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#aboutModal">
+          Learn More About Intel
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- The Modal itself (keep this near the end of your <body>) -->
+  <!-- Modal structure provided by Bootstrap -->
+  <div class="modal fade" id="aboutModal" tabindex="-1" aria-labelledby="aboutModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <!-- Modal header with a close button -->
+        <div class="modal-header">
+          <h5 class="modal-title" id="aboutModalLabel">About Intel</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <!-- Modal body with your content -->
+        <div class="modal-body">
+          Intel is a leader in technology innovation, focusing on sustainability and a better future for everyone.
+        </div>
+        <!-- Modal footer with a close button -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Language Switcher at the bottom -->
+  <div class="container my-4">
+    <!-- Label for accessibility -->
+    <label for="language-select" class="form-label">Choose Language:</label>
+    <select id="language-select" class="form-select" style="max-width:200px;">
+      <option value="en" selected>English</option>
+      <option value="ar">العربية</option>
+    </select>
+  </div>
+
+   <!-- Simple script to swap language for all cards -->
+  <script>
+    // Arrays for all card headings, texts, and extra details in both languages
+    // English is index 0, Arabic is index 1
+    const cardTitles = [
+      [
+        "Intel Founded",
+        "First Microprocessor",
+        "8086 Processor",
+        "386 Processor",
+        "Peak GHG Emissions",
+        "RISE Strategy",
+        "Net-Zero By 2040",
+        "Renewable Electricity",
+        "Sustainability Summit"
+      ],
+      [
+        "تأسيس إنتل",
+        "أول معالج دقيق",
+        "معالج 8086",
+        "معالج 386",
+        "ذروة انبعاثات الغازات الدفيئة",
+        "استراتيجية RISE",
+        "صفر انبعاثات بحلول 2040",
+        "الكهرباء المتجددة",
+        "قمة الاستدامة"
+      ]
+    ];
+
+    const cardTexts = [
+      [
+        "Robert Noyce and Gordon Moore rename the newly formed company NM Electronics to Intel Corporation, laying the foundation for decades of technological innovation.",
+        "Intel debuts the 4004, the world's first commercial microprocessor, igniting the microprocessor revolution and propelling the future of computing devices.",
+        "Launch of the 8086 processor, establishing the x86 architecture that drives countless PCs and servers in the modern era.",
+        "Intel introduces the 386 processor with 32-bit architecture, ushering in a new era of performance and multitasking for personal computers.",
+        "This year marks Intel's highest annual greenhouse gas emissions for operations. Over subsequent years, Intel invests heavily in chemical abatement, renewable energy, and energy-efficient manufacturing to reverse this trend.",
+        "Intel launches its RISE (Responsible, Inclusive, Sustainable, Enabling) strategy and 2030 goals, aiming to drive industry-wide progress on climate action, water stewardship, and waste reduction.",
+        "Intel announces its commitment to achieve net-zero greenhouse gas emissions (Scope 1 and 2) across its global operations by 2040, building on years of environmental initiatives.",
+        "The company achieves 99% renewable electricity usage worldwide, helping to drastically lower carbon emissions and driving progress toward Intel's long-term sustainability goals.",
+        "Intel hosts its first Sustainability Summit, uniting suppliers, government officials, and industry leaders to collaborate on next-generation sustainable semiconductor manufacturing."
+      ],
+      [
+        "روبرت نويس وجوردون مور يغيران اسم الشركة الجديدة من NM Electronics إلى إنتل، مما يمهد الطريق لعقود من الابتكار التكنولوجي.",
+        "تطلق إنتل 4004، أول معالج دقيق تجاري في العالم، مما يشعل ثورة المعالجات الدقيقة ويدفع مستقبل أجهزة الحوسبة.",
+        "إطلاق معالج 8086، الذي أسس بنية x86 التي تشغل العديد من أجهزة الكمبيوتر والخوادم الحديثة.",
+        "تقدم إنتل معالج 386 بهندسة 32-بت، مما أتاح أداءً أفضل وتشغيل عدة برامج في وقت واحد لأجهزة الكمبيوتر الشخصية.",
+        "يمثل هذا العام أعلى انبعاثات سنوية للغازات الدفيئة في عمليات إنتل. في السنوات التالية، استثمرت الشركة بكثافة في الطاقة المتجددة والتقنيات الجديدة لعكس هذا الاتجاه.",
+        "تطلق إنتل استراتيجية RISE (مسؤولة، شاملة، مستدامة، ممكنة) وأهداف 2030، بهدف دفع التقدم في العمل المناخي وإدارة المياه وتقليل النفايات.",
+        "تعلن إنتل التزامها بتحقيق صافي انبعاثات صفرية (النطاق 1 و2) في عملياتها العالمية بحلول عام 2040، استنادًا إلى سنوات من المبادرات البيئية.",
+        "تصل الشركة إلى استخدام 99% من الكهرباء المتجددة عالميًا، مما يساعد على خفض الانبعاثات الكربونية بشكل كبير ودفع التقدم نحو أهداف الاستدامة طويلة الأجل.",
+        "تستضيف إنتل أول قمة للاستدامة، تجمع الموردين والمسؤولين الحكوميين وقادة الصناعة للتعاون في تصنيع أشباه الموصلات المستدامة."
+      ]
+    ];
+
+    const cardExtras = [
+      [
+        'Did you know? The name "Intel" comes from "Integrated Electronics."',
+        "The 4004 chip had just 2,300 transistors—modern chips have billions!",
+        "The x86 architecture is still used in most PCs today.",
+        "The 386 could run multiple programs at once—a big step for PCs!",
+        "Intel reduced emissions by investing in renewable energy and new technology.",
+        "RISE stands for Responsible, Inclusive, Sustainable, Enabling.",
+        "Net-zero means balancing the amount of emitted and removed greenhouse gases.",
+        "Renewable electricity comes from sources like wind and solar power.",
+        "The summit helps share ideas for a greener future in technology."
+      ],
+      [
+        'هل تعلم؟ اسم "إنتل" يأتي من "الإلكترونيات المتكاملة".',
+        "شريحة 4004 احتوت فقط على 2,300 ترانزستور—الشرائح الحديثة تحتوي على مليارات!",
+        "بنية x86 لا تزال مستخدمة في معظم أجهزة الكمبيوتر اليوم.",
+        "معالج 386 كان يمكنه تشغيل عدة برامج في نفس الوقت—خطوة كبيرة لأجهزة الكمبيوتر!",
+        "قللت إنتل الانبعاثات من خلال الاستثمار في الطاقة المتجددة والتقنيات الجديدة.",
+        "RISE تعني مسؤولة، شاملة، مستدامة، ممكنة.",
+        "صافي الصفر يعني موازنة الانبعاثات مع الإزالة.",
+        "الكهرباء المتجددة تأتي من مصادر مثل الرياح والطاقة الشمسية.",
+        "القمة تساعد في تبادل الأفكار لمستقبل أكثر خضرة في التكنولوجيا."
+      ]
+    ];
+
+    // When the language changes
+    document.getElementById('language-select').addEventListener('change', function() {
+      // 0 for English, 1 for Arabic
+      const langIndex = this.value === 'ar' ? 1 : 0;
+
+      // Set page direction and language
+      document.documentElement.lang = this.value;
+      document.body.dir = this.value === 'ar' ? 'rtl' : 'ltr';
+
+      // Change main heading and subheading
+      document.querySelector('h1').textContent = langIndex === 1
+        ? 'الاستدامة عبر العصور'
+        : 'Sustainability Through the Ages';
+
+      document.querySelector('.lead').textContent = langIndex === 1
+        ? 'استكشف رحلة إنتل عبر الزمن واكتشف كيف شكل التزامنا بالابتكار مستقبلًا أكثر استدامة للتكنولوجيا وكوكبنا.'
+        : "Explore Intel's journey through time, discovering how our commitment to innovation has shaped a more sustainable future for technology and our planet.";
+
+      // Change the timeline instruction text
+      document.querySelector('.text-center.mb-4').textContent = langIndex === 1
+        ? 'قم بالتمرير لعرض الجدول الزمني | مرر فوق البطاقات لمعرفة المزيد!'
+        : 'Scroll to view timeline | Hover over cards to learn more!';
+
+      // Change all timeline cards
+      const cards = document.querySelectorAll('.timeline-card');
+      cards.forEach(function(card, i) {
+        // Change the card title (h3)
+        const h3 = card.querySelector('h3');
+        if (h3) h3.textContent = cardTitles[langIndex][i] || '';
+
+        // Change the card text (p)
+        const p = card.querySelector('.card-text');
+        if (p) p.textContent = cardTexts[langIndex][i] || '';
+
+        // Change the extra details (div)
+        const extra = card.querySelector('.extra-details');
+        if (extra) extra.textContent = cardExtras[langIndex][i] || '';
+      });
+    });
+  </script>
+
   <!-- Bootstrap JS for interactive components (optional for this page) -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+
+  <!-- Footer Section -->
+  <footer class="bg-light py-3 mt-4">
+    <div class="container text-center">
+      <!-- Navigation links (placeholders) -->
+      <nav>
+        <!-- These links don't go anywhere yet -->
+        <a href="#" class="mx-2 text-decoration-none text-secondary">Privacy Policy</a>
+        <span>|</span>
+        <a href="#" class="mx-2 text-decoration-none text-secondary">Terms of Use</a>
+        <span>|</span>
+        <a href="#" class="mx-2 text-decoration-none text-secondary">Contact</a>
+      </nav>
+      <!-- Copyright notice -->
+      <div class="mt-2 text-secondary" style="font-size: 0.95em;">
+        &copy; 2024 Intel Corporation. All rights reserved.
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
